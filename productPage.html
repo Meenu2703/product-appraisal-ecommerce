@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+	<link rel="stylesheet" href="productpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        .holdingContainer {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+        }
+        .p1 {
+            flex: 1 1 calc(25% - 20px); 
+            margin: 10px; 
+            height: 500px;
+            text-align: left;
+            overflow: hidden;
+            border-radius: 8px; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+        }
+        .p1 img {
+            height: 80%;
+            width: 100%;
+            object-fit: cover;
+        }
+        /* Hover effects */
+        .p1:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); 
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .p1 {
+                flex: 1 1 calc(50% - 20px); 
+            }
+        }
+        @media (max-width: 576px) {
+            .p1 {
+                flex: 1 1 100%; 
+            }
+        }
+        footer {
+            background-color: #354F52;
+            margin: 0.5rem;
+        }
+        .footer_container {
+            width: 100%;
+            padding: 40px 30px 5px;
+        }
+        .social_icons {
+            display: flex;
+            justify-content: center;
+        }
+        .social_icons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: #CAD2C5;
+            margin: 10px;
+            border-radius: 50%;
+        }
+        .social_icons a i {
+            font-size: 2em;
+            color: black;
+            opacity: 0.9;
+        }
+        .social_icons a:hover {
+            background-color: #2F3E46;
+            transition: 0.5s;
+        }
+        .social_icons a:hover i {
+            color: #CAD2C5;
+            transition: 0.5s;
+        }
+        .footernav {
+            margin: 30px 0;
+        }
+        .footernav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+        .footernav ul li a {
+            color: #CAD2C5;
+            margin: 20px;
+            text-emphasis: none;
+            font-size: 1.3em;
+            opacity: 0.7;
+            transition: 0.5s;
+            text-decoration: none;
+        }
+        .footernav ul li a:hover {
+            color: white;
+        }
+        .footerbottom {
+            background-color: #52796F;
+            padding: 10px;
+            text-align: center;
+        }
+        .footerbottom p {
+            color: #CAD2C5;
+        }
+        .reserved {
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0px 5px;
+        }
+        @media (max-width: 700px) {
+            .footernav ul {
+                flex-direction: column;
+            }
+            .footernav ul li {
+                width: 100%;
+                text-align: center;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand navbar-light" href="homepg.html">HOME</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="productPage.html">WOMEN</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">CART</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="lgn.html" tabindex="-1" aria-disabled="true">LOGIN/REGISTER</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-black" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="holdingContainer">
+        <div class="p1">
+            <img src="image\w_coll_img\p1.jpg" alt="Coffee knit sweater">
+            <h4>Coffee knit sweater</h4>
+            <h6>Rs.1200</h6>
+            <img src="project\stars.png" style="height:18px; width: 100px;">
+        </div>
+        <div class="p1" onclick="window.location.href='page2.html'">
+            <img src="image\ama3 (1).jpg" alt="Orange bliss">
+            <h4>Rayon Fit and Flare </h4>
+            <h6>Rs.1999</h6>
+            <img src="project\stars.png" style="height:18px; width: 100px;">
+        </div>
+        <div class="p1">
+            <img src="image\w_coll_img\p3 (1).jpg" alt="Halloween stripes">
+            <h4>Halloween stripes</h4>
+            <h6>Rs.1200</h6>
+            <img src="project\stars.png" style="height:18px; width: 100px;">
+        </div>
+        <div class="p1">
+            <img src="image\w_coll_img\p4.jpg" alt="Plaid shirt">
+            <h4>Yellow chess</h4>
+            <h6>Rs.1200</h6>
+            <img src="project\stars.png" style="height:18px; width: 100px;">
+        </div>
+        <!-- Second Row of Images -->
+        <div class="p1">
+            <img src="image\w_coll_img\p6.jpg" alt="Summer dress">
+            <h4>Beige Bliss</h4>
+            <h6>Rs.1500</h6>
+            <img src="project\stars.png" style="height:18px; width: 100px;">
+        </div>
+        <div class="p1">
+            <img src="image\w_coll_img\p5.jpg" alt="Winter coat">
+            <h4>Candy knit</h4>
+            <h6>Rs.2500</h6>
+            <img src="project\stars.png" style="height:18px; width: 100px;">
+        </div>
+        <div class="p1">
+            <img src="image\w_coll_img\p7.jpg" alt="Casual shoes">
+            <h4>Brown Jacket</h4>
+            <h6>Rs.1800</h6>
+            <img src="project\stars.png" style="height:18px; width: 100px;">
+        </div>
+        <div class="p1">
+            <img src="image\w_coll_img\p8.jpg" alt="Denim jacket">
+            <h4>Graphic cardigan</h4>
+            <h6>Rs.2000</h6>
+            <img src="project\stars.png" style="height:18px; width: 100px;">
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <footer>
+      <div class="footer_container">
+        <div class="social_icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footernav">
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li><a href="">OUR TEAM</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerbottom">
+        <p>Copyright &copy;2024; All Rights <span class="reserved">Reserved</span></p>
+      </div>
+    </footer>
+</body>
+</html>

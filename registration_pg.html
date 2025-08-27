@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logincss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+    <title>Sign-up</title>
+    <style>
+         .error,
+        .required {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .reg_btn{
+            background-color:transparent;
+            padding: 0rem 1rem;
+            border: 1px solid black;
+        }
+        .button_view{
+            background-color: #354F52;
+            color: #f2f5f1;
+            padding: 1%;
+            font-size:1.5rem;
+            margin: 2%;
+            border: 0cm;
+            width: 15rem;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .button_view:hover{
+            background-color: #f2f5f1;
+            color:#354F52;
+            border:1px solid #354F52;
+        }
+    </style>
+</head>
+<body>
+  <div class="main">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand navbar-light" href="homepg.html">HOME</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="productPage.html">WOMEN</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">CART</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="lgn.html" tabindex="-1" aria-disabled="true">LOGIN/REGISTER</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-black" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+        <form class="form-container" method="post" action="C:\Users\Vivobook\Desktop\misc\courserajs.html" onsubmit="return validate()" aria-labelledby="loginForm">
+            <h2 style="text-align:center;  color:#52796F">Sign Up</h2>
+            <div class="input-fields">
+                <label for="name"><b>Name</b><span class="req">*</span></label>
+                <input type="name" id="name" aria-label="name"  placeholder="Enter your name" required>
+                <div class="error" aria-live="polite"></div>
+            </div>
+            
+            <div class="input-fields">
+                <label for="phone"><b>Phone Number:</b><span class="required">*</span></label>
+            <input type="text" id="phone" name="phone">
+            <div class="error" id="phone-error"></div>
+
+            <label for="email"><b>E-mail:</b><span class="required">*</span></label>
+            <input type="text" id="email" name="email">
+            <div class="error" id="email-error"></div>
+                
+            <label for="password"><b>Password:</b><span class="required">*</span></label>
+            <input type="password" id="password" name="password">
+            <div class="error" id="password-error"></div>
+
+            <label for="password1"><b>Re-enter Password:</b><span class="required">*</span></label>
+            <input type="password" id="password1" name="password1">
+            <div class="error" id="password1-error"></div>
+            </div>
+         <center>
+        <button class="button_view">
+			Sign Up
+        </button>
+      </center>
+             
+        </form>
+      
+        <footer>
+            <div class="footer_container">
+              <div class="social_icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="footernav">
+                <ul>
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">ABOUT</a></li>
+                  <li><a href="">CONTACT US</a></li>
+                  <li><a href="">OUR TEAM</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footerbottom">
+              <p>Copyright &copy;2024; All Rights <span class="reserved">Reserved</span></p>
+            </div>
+          </footer>
+        </div>
+    <script src="form_valid.js"></script>
+</body>
+</html>

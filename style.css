@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #354F52;
+    padding: 10px;
+    height: 11vh;   
+}
+.navbar .nav-link, .navbar .navbar-brand {
+    color:#CAD2C5; /* Custom color for the font */
+  }
+.content{
+    position: absolute;
+    bottom: 0;
+    color:#CAD2C5;
+    width:100%;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.shop_btn{
+    padding: 1.5rex;
+    background-color: transparent;
+    width: auto;
+    height:auto;
+    color:#CAD2C5;
+    border-color: #CAD2C5;
+    border-width: 4px;
+    font-size:2rem;
+}
+#nxt_blck{
+    font-size: 7vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 3vh 0vh;
+}
+.mySlides {
+    display:none;
+    width: 100%;        /* Make the image take up the full width of the screen */
+    height: 100vh;      /* Set the height to 100% of the viewport height */
+    object-fit: cover;
+  }
+    
+body {
+    font-family: Arial, sans-serif;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+.w3-content{
+    margin: 3px;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.img_holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.img_zoom{
+    position: relative;
+    width: 25rem;
+    height: 30rem;
+    overflow: hidden;
+}
+.base-img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+.hover-img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    opacity: 0;
+    transition: tranform 0.3s ease,opacity 0.3s ease;
+}
+.img_zoom:hover .hover-img{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+
+.button_view{
+    background-color: #354F52;
+    color: #f2f5f1;
+    padding: 1%;
+    font-size:2rem;
+    margin: 2%;
+    border: 0cm;
+    width: 15rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.button_view:hover{
+    background-color: #f2f5f1;
+    color:#354F52;
+    border:1px solid #354F52;
+}
+
+.holder_p{
+    font-size: larger;
+}
+footer{
+    background-color:#354F52;
+    margin: 0.5rem;
+}
+.footer_container{
+    width: 100%;
+    padding:40px 30px 5px;
+}
+.social_icons{
+    display: flex;
+    justify-content:center;
+}
+.social_icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #CAD2C5;
+    margin: 10px;
+    border-radius: 50%;
+}
+.social_icons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.social_icons a:hover{
+    background-color:#2F3E46 ;
+    transition: 0.5s;
+
+}
+.social_icons a:hover i{
+    color: #CAD2C5;
+    transition: 0.5s;
+}
+.footernav{
+    margin: 30px 0;
+}
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footernav ul li a{
+    color: #CAD2C5;
+    margin: 20px;
+    text-emphasis: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.footernav ul li a:hover{
+    color: white;
+}
+.footerbottom{
+    background-color:#52796F;
+    padding: 10px;
+    text-align: center;
+}
+.footerbottom p{
+    color: #CAD2C5;
+}
+.reserved{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    margin: 0px 5px;
+}
+@media (max-width:700px) {
+    .footernav ul{
+        flex-direction: column;
+
+    }
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}

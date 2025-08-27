@@ -1,0 +1,177 @@
+
+body{
+    margin:0;
+    box-sizing:border-box;
+    padding:0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+   
+    
+}
+
+.main{
+    background-color:#d8f3dc;
+}
+form{
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.navbar{
+    background-color: #354F52;
+    padding: 10px;
+    height: 11vh;
+    color: #f2f5f1;
+}
+span{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1vw;
+}
+.form-container{
+    
+    display:flex;
+    flex-direction: column;
+    margin:70px auto;
+    max-width:400px;
+  
+    padding:2vw;
+   gap:1.5vw;
+}
+.input-fields{
+    display:flex;
+    flex-direction:column;
+    font-family:'Times New Roman', Times, serif;
+    gap:1vw;
+    background-color: white;
+}
+.req{
+    color:red;
+}
+
+input{
+    background-color: white;
+    border:1px solid black;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+input[type="submit"]{
+    width:50%;
+    margin: 0 auto;
+    cursor:pointer;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+label{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+input::placeholder {
+    font-size: 1vw;;
+    font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
+}
+#forpass{
+    text-align:right;
+    font-size: 13px;
+    color:black;
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+#newmem{
+    text-align:center;
+    background-color: white;
+}
+p{
+    font-size: 13px;
+}
+.icons{
+    display:flex;
+    justify-content: center;
+    font-size:25px;
+    
+}
+i{
+    margin:0 5px;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+.error{
+    color:red;
+    font-size: 12px;    
+}
+footer{
+    background-color:#354F52;
+    margin: 0.5rem;
+}
+.footer_container{
+    width: 100%;
+    padding:40px 30px 5px;
+}
+.social_icons{
+    display: flex;
+    justify-content:center;
+}
+.social_icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #CAD2C5;
+    margin: 10px;
+    border-radius: 50%;
+}
+.social_icons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.social_icons a:hover{
+    background-color:#2F3E46 ;
+    transition: 0.5s;
+
+}
+.social_icons a:hover i{
+    color: #CAD2C5;
+    transition: 0.5s;
+}
+.footernav{
+    margin: 30px 0;
+}
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footernav ul li a{
+    color: #CAD2C5;
+    margin: 20px;
+    text-emphasis: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.footernav ul li a:hover{
+    color: white;
+}
+.footerbottom{
+    background-color:#52796F;
+    padding: 10px;
+    text-align: center;
+}
+.footerbottom p{
+    color: #CAD2C5;
+}
+.reserved{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    margin: 0px 5px;
+}
+@media (max-width:700px) {
+    .footernav ul{
+        flex-direction: column;
+
+    }
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-width, initial-scale=1.0">
+    <title>Women clothing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand navbar-light" href="homepg.html">HOME</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="productPage.html">WOMEN</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">CART</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="lgn.html" tabindex="-1" aria-disabled="true">LOGIN/REGISTER</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-black" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<div class="w3-content w3-section" style="max-width:100%; height: 100vh;">
+  <img class="mySlides" src="./image/cloth16.jpeg" style="width:100%">
+  <img class="mySlides" src="./image/cloth3.jpeg" style="width:100%">
+  <img class="mySlides" src="./image/cloth7.webp" style="width:100%">
+  <div class="content">
+    <H1 style=" font-size: 4rem;">FIORE</H1>
+    <button class="shop_btn">SHOP NOW</button>
+  </div>
+</div>
+
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
+    <div>
+      <center>
+      <h1 id="nxt_blck">NEW IN</h1>
+      </center>
+    </div> 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Slider</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="slider-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider">
+                <div class="slide">
+                    <img src="./image/container_img8.webp" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="./image/container_img10.webp" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="./image/container_img9.webp" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="./image/container_img1.webp" alt="Image 4">
+                </div>
+                <div class="slide">
+                    <img src="./image/container_img7.webp" alt="Image 5">
+                </div>
+                <div class="slide">
+                    <img src="./image/container_img6.webp" alt="Image 6">
+                </div>
+                <div class="slide">
+                    <img src="./image/container_img5.jpeg" alt="Image 7">
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    
+        <script src="script.js"></script>
+        <div class="video_div" style="width: 100%; height: 50%; margin: 0.5rem 0rem 0rem 0rem;" >
+          <video autoplay muted loop class="video_clip" style="width: 100%; height: 50%;">
+            <source src="./vedio/prj_clip.mp4">
+          </video>
+        </div>
+        <center>
+        <button class="button_view">
+          VIEW ALL
+        </button>
+      </center>
+        <div class="img_holder">
+          <div class="img_zoom">
+            <img src="./image/container_img2.jpeg" alt="img_1" class="base-img">
+            <img src="./image/container_img2(1).jpeg" alt="img_hover" class="hover-img">
+            <div class="pro_des">
+            <p class="holder_p">Blush Dress<br>Rs. 9,000.00</p>
+            </div>
+          </div>
+          <div class="img_zoom">
+            <img src="./image/img_holder1.jpeg" alt="img_1" class="base-img">
+            <img src="./image/img_holder1(1).jpeg" alt="img_hover" class="hover-img">
+            <div class="pro_des">
+            <p class="holder_p">Rivoli Dress<br>Rs. 9,000.00</p>
+            </div>
+          </div>
+          <div class="img_zoom">
+            <img src="./image/img_holder2.webp" alt="img_1" class="base-img">
+            <img src="./image/img_holder2(1).webp" alt="img_hover" class="hover-img">
+            <div class="pro_des">
+            <p class="holder_p">Charcoal Embellished Top<br>Rs. 9,000.00</p>
+          </div>
+          </div>
+          <div class="img_zoom">
+            <img src="./image/img_holder3.jpeg" alt="img_1" class="base-img">
+            <img src="./image/img_holder3(1).webp" alt="img_hover" class="hover-img">
+            <div class="pro_des">
+            <p class="holder_p">Blush Dress<br>Rs. 9,000.00</p>
+          </div>
+          </div>
+          <div class="img_zoom">
+            <img src="./image/img_holder5.jpeg" alt="img_1" class="base-img">
+            <img src="./image/img_holder5(1).jpeg" alt="img_hover" class="hover-img">
+            <div class="pro_des">
+            <p class="holder_p">Aruba Shacket Dress<br>Rs. 9,000.00</p>
+          </div>
+          </div>
+          <div class="img_zoom">
+            <img src="./image/cloth8.jpeg" alt="img_1" class="base-img">
+            <img src="./image/cloth8(1).jpeg" alt="img_hover" class="hover-img">
+            <div class="pro_des">
+            <p class="holder_p">Moonlit Co-ord<br>Rs. 9,000.00</p>
+          </div>
+          </div>
+          <div class="img_zoom">
+            <img src="./image/img_holder8.jpeg" alt="img_1" class="base-img">
+            <img src="./image/img_holder8(1).webp" alt="img_hover" class="hover-img">
+            <div class="pro_des">
+            <p class="holder_p">Blush Dress<br>Rs. 9,000.00</p>
+          </div>
+          </div>
+        </div>
+        <footer>
+          <div class="footer_container">
+            <div class="social_icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footernav">
+              <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT US</a></li>
+                <li><a href="">OUR TEAM</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footerbottom">
+            <p>Copyright &copy;2024; All Rights <span class="reserved">Reserved</span></p>
+          </div>
+        </footer>
+    
+</body>
+</html>
+    

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logincss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+    <title>Login</title>
+</head>
+<body>
+  <div class="main">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand navbar-light" href="homepg.html">HOME</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="productPage.html">WOMEN</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">CART</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="lgn.html" tabindex="-1" aria-disabled="true">LOGIN/REGISTER</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-black" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+        <form class="form-container" method="post" action="C:\Users\Vivobook\Desktop\misc\courserajs.html" onsubmit="return validate()" aria-labelledby="loginForm">
+            <h2 style="text-align:center;  color:#52796F">Login</h2>
+            <div class="input-fields">
+                <label for="email">Email<span class="req">*</span></label>
+                
+                <input type="email" id="email" aria-label="email"  placeholder="&nbsp;Enter your email" required>
+                <div class="error" aria-live="polite"></div>
+            </div>
+            <div class="input-fields">
+                <label for="pass">Password<span class="req">*</span></label>
+                
+                <input type="password" id="pass" aria-label="password" placeholder="&nbsp;Enter your password" required>
+                <div class="error" aria-live="polite"></div>
+                <a id="forpass" href="#">Forgot Password?</a>
+            </div>
+            <div class="input-fields">
+                <input type="submit" id="submit" value="SIGN IN">
+                
+            </div>
+            <div class="misc">
+                <p id="newmem">New to our platform?&nbsp;<a href="registration_pg.html"><b  >SIGN UP!</b></a>
+                
+                
+
+            </div>
+            
+            
+        </form>
+      
+        <footer>
+            <div class="footer_container">
+              <div class="social_icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="footernav">
+                <ul>
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">ABOUT</a></li>
+                  <li><a href="">CONTACT US</a></li>
+                  <li><a href="">OUR TEAM</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footerbottom">
+              <p>Copyright &copy;2024; All Rights <span class="reserved">Reserved</span></p>
+            </div>
+          </footer>
+        </div>
+    <script src="login.js"></script>
+</body>
+</html>

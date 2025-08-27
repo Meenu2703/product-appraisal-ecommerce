@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <link rel="stylesheet" href="page2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand navbar-light" href="homepg.html">HOME</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="productPage.html">WOMEN</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">CART</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="lgn.html" tabindex="-1" aria-disabled="true">LOGIN/REGISTER</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-black" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="spc"></div>
+    <div class="combined">
+        <div class="twodiv">
+        <div class="main" ><img src="image\ama3 (1).jpg" alt="Main image" onclick="fullImage(this.src)" ></div>
+        <div id="fullimagevw"><img id="Fullview">
+        <span id="close" onclick="Close()">&times;</span>
+    </div>
+        <div class="pics">
+            <div class="pic1" onclick="image1()"><img src="image\ama3 (1).jpg" alt="image 1" aria-label="View image 1"></div>
+            <div class="pic2" onclick="image2()"><img src="image\ama1.jpg" alt="image 2" aria-label="View image 2" ></div>
+            <div class="pic3" onclick="image3()"><img src="D:\WT_PRJ\image\ama2.jpg" alt="image 3" aria-label="View image 3"></div>
+        </div> 
+        
+    </div>
+        <div class="side">
+            <h4>Rayon Fit and Flare Ankle Length One Piece</h4>
+            <p>Rs.1,999/-<br><span>inclusive of all taxes</span>
+            <p>★★★★☆ (4/5)</p>
+            <p>Select Size </p>
+            <div class="circles">
+                <div class="size1" onclick="s1()" tabindex="0">26</div>
+                <div class="size2" onclick="s2()" tabindex="0">28</div>
+                <div class="size2" onclick="s2()" tabindex="0">28</div>
+                <div class="size3" onclick="s3()" tabindex="0">30</div>
+                <div class="size4" onclick="s4()" tabindex="0">32</div>
+                <div class="size5" onclick="s5()" tabindex="0">34</div>
+                <div class="size6" onclick="s6()" tabindex="0">36</div>
+            </div>
+            <br>
+            <i class="bi bi-shop"><span >&nbsp;&nbsp;Find in store</span></i><br>
+            
+            <i class="bi bi-truck"><span>&nbsp;&nbsp;Delivery Time:2-7 days</span></i>
+            <div class="space2"></div>
+
+            <div class="btns">
+            <button aria-label="Add to Bag"><i class="bi bi-bag"></i> Add to Bag</button>
+            <button aria-label="Buy Now">Buy Now</button>
+             </div>
+             
+             <div class="space2"></div>
+             
+             <div class="desc">
+                <p id="prodhead" style="font-weight: 600;">Description</p><p id="detprod">
+                    The midi dress features an eye-catching abstract print in white and dark green, perfect for those who love bold fashion statements. Designed with a relaxed fit and wide short sleeves, it offers both comfort and elegance. 
+                    The gathered waistline adds a flattering touch, while the flowing skirt creates a graceful, effortless silhouette.</p>
+             </div>
+             <div class="det"><p id="prodhead" style="font-weight: 600;">Product Details</p>
+                <p>Material type: Rayon Blend</p>
+                <p>Length: Midi</p>
+                <p>Occasion type: Party</p>
+                <p>Sleeve Type: Half Sleeve</p>
+                <p>Pattern: Printed</p>
+                <p>Style: Fit And Flare</p>
+                <p>Product Dimensions: 15 x 10 x 2 cm; 300 g</p>
+                <p>Item model number: LF-WD1194</p>
+                <p>Country of Origin: India</p>
+                <p>Item Weight: 300 g</p>
+                <p>Item Dimensions LxWxH: 15 x 10 x 2 Centimeters</p>
+                
+            </div>
+        </div>  
+        
+    </div>
+    <div class="space2"></div>
+    <!-- <div class="details"><p id="prodhead">Product Details</p>
+        <p>Material type: Rayon Blend</p>
+        <p>Length: Midi</p>
+        <p>Occasion type: Party</p>
+        <p>Sleeve Type: Half Sleeve</p>
+        <p>Pattern: Printed</p>
+        <p>Style: Fit And Flare</p>
+        <p>Product Dimensions: 15 x 10 x 2 cm; 300 g</p>
+        <p>Item model number: LF-WD1194</p>
+        <p>Country of Origin: India</p>
+        <p>Item Weight: 300 g</p>
+        <p>Item Dimensions LxWxH: 15 x 10 x 2 Centimeters</p>
+        
+    </div> -->
+    <br>
+    <div class="review">
+        <h2>Reviews</h2>
+            <div class="rev1">
+                <p id="revcontent">
+                    Username: @StyleSeeker89<br>
+                    Rating: ★★★★★ (5/5)<br><br>
+                    I recently purchased the Floral Summer Frock, and I must say, it has quickly become one of my favorite additions to my wardrobe!
+                    The first thing that caught my eye was the beautiful floral pattern. The colors are vibrant yet soft, making it perfect for both casual outings and semi-formal events. The A-line silhouette flatters my figure, providing a comfortable fit without being too tight. The knee-length hemline gives it a youthful and playful vibe.
+                    The fabric is light and breathable, which is essential for hot summer days. I wore it during a picnic, and it kept me feeling fresh throughout the day. The dress is lined, which adds a nice touch of quality, and it feels soft against the skin. The adjustable straps are a bonus, allowing me to customize the fit to my preference.
+                </p></div>
+            <div class="rev2">
+                <p id="revcontent">
+                    Username: Fashionista123<br>
+                    Rating: ★★★★☆ (4/5)<br><br>
+                    "Chic and Comfortable!"<br>
+                    I bought this frock for a family gathering, and it was a hit! The design is chic yet playful, making it suitable for various occasions. The fit was perfect, and it allowed for easy movement, which was great since my daughter loves to play. My only complaint is that the fabric wrinkles easily, so I had to iron it before wearing. Still, I would purchase it again!
+                </p>
+            </div>
+        
+            <div class="rev3">
+                <p id="revcontent">
+                    Username: Maya@123<br>
+                    Rating: ★★★★☆ (4/5)<br><br>
+                    "Absolutely Adorable!"<br>
+                    I bought this frock for a family gathering, and it was a hit! The design is chic yet playful, making it suitable for various occasions. The fit was perfect, and it allowed for easy movement, which was great since my daughter loves to play. My only complaint is that the fabric wrinkles easily, so I had to iron it before wearing. Still, I would purchase it again.
+                    The versatility is amazing; she can wear it to parties or just for playdates at the park. I appreciate the thoughtful design details, like the cute pockets and the adjustable straps. The sizing is true to form, and it looks adorable paired with a cardigan for cooler days. I will definitely be buying more in different colors!
+                </p>
+            </div>
+            <div class="rev4">
+                <p id="revcontent">
+                    Username: @StyleSeeker89<br>
+                    Rating: ★★★★★ (5/5)<br><br>
+                    I recently purchased the Floral Summer Frock, and I must say, it has quickly become one of my favorite additions to my wardrobe! The colors are vibrant yet soft, making it perfect for both casual outings and semi-formal events. The A-line silhouette flatters my figure, providing a comfortable fit without being too tight. The knee-length hemline gives it a youthful and playful vibe.
+                    This frock is incredibly versatile. I’ve dressed it up with a pair of wedges for a garden party and paired it with sandals for a casual day out. It looks great with a denim jacket too! The floral print also makes it easy to accessorize with different jewelry options.
+                    I’ve washed it a few times now, and it holds up well. The colors remain vibrant, and there’s been no fading or shrinking, which is always a concern with lighter fabrics.
+                </p>
+            
+        </div>
+        <div class="morerev">
+        <button type="button">See More</button></div>
+    </div>
+    <footer>
+            <div class="footer_container">
+              <div class="social_icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="footernav">
+                <ul>
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">ABOUT</a></li>
+                  <li><a href="">CONTACT US</a></li>
+                  <li><a href="">OUR TEAM</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footerbottom">
+              <p>Copyright &copy;2024; All Rights <span class="reserved">Reserved</span></p>
+            </div>
+          </footer>
+ 
+    <script src="page1.js"></script>
+</body>
+</html>
